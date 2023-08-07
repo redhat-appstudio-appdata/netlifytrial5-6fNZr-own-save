@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: netlifytrial-0fwe
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: netlifytrial-0fwe
+    app.kubernetes.io/part-of: netlifytrial5
+  name: netlifytrial-0fwe
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: netlifytrial-0fwe
+status:
+  loadBalancer: {}
