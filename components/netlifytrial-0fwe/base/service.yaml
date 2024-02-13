@@ -11,7 +11,8 @@ metadata:
   name: netlifytrial-0fwe
 spec:
   ports:
-  - port: 3001
+  - name: "3001"
+    port: 3001
     targetPort: 3001
   selector:
     app.kubernetes.io/instance: netlifytrial-0fwe
